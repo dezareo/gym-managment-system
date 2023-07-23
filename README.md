@@ -5,13 +5,15 @@
 
 ## Pages
 
-The website was created for the needs of a daily activities of gym stuff. It consists of dynamic .php pages that provide managment system for gym stuff such as administrators, trainers etc. 
+The website was created for the needs of a daily activities of gym stuff. It consists of dynamic .php pages that provide managment system for gym stuff such as administrators, trainers etc. This system is created on procedural way of PHP programming.
 
 ## Styles
 
 //
 
 ## Modules
+
+//
 
 ## Project structure
 
