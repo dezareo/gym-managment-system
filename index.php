@@ -1,16 +1,6 @@
 <?php
 
-//database connection datas
-	$servername = "localhost";
-	$db_username = "root";
-	$db_password = "";
-	$database_name ="gym-managment-system";
-
-	$conn = mysqli_connect($servername, $db_username, $db_password, $database_name);
-
-	if(!$conn) {
-		die ("Database connection error");
-	}
+require_once'config.php';
 
 	if($_SERVER['REQUEST_METHOD'] == "POST") {
 
@@ -18,6 +8,15 @@
 		$password = $_POST['password'];
 
 		$sql = "SELECT admin_id, password FROM admins WHERE username = 'admin'";
+
+		$run = $conn->prepare($sql);
+		$run->bind_param("s", $username);
+		$run->execute();
+
+		$results = $run->get_result();
+
+		var_dump($results);
+
 
 	} else {
 		echo "Nisu poslati podaci";
