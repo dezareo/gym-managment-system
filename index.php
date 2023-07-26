@@ -15,13 +15,6 @@ require_once'config.php';
 
 		$results = $run->get_result();
 
-		var_dump($results);
-
-
-	} else {
-		echo "Nisu poslati podaci";
-	}
-
 ?>
 
 
